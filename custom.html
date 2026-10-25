@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom Request | Matt’s 3D Customs Inc.</title>
+<meta name="description" content="Request a custom 3D print. Tell us what you need, upload your file, choose a material and timeline.">
+<meta name="theme-color" content="#2E4A3A">
+<meta property="og:title" content="Custom Request | Matt’s 3D Customs Inc.">
+<meta property="og:description" content="Request a custom 3D print. Tell us what you need, upload your file, choose a material and timeline.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/logo.svg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Matt’s 3D Customs Inc.","slogan":"Design Your Imagination. For the Future is Yours.","description":"Custom 3D printing, prototypes and collectibles.","email":"hello@example.com"}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header camo">
+<div class="wrap bar">
+<a class="brand" href="index.html"><img src="assets/logo.svg" alt="Matt’s 3D Customs Inc. logo with 3D printer icon" width="210" height="40"></a>
+<button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">☰</button>
+<nav id="nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="custom.html" aria-current="page">Custom Request</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></nav>
+</div>
+</header>
+<main id="main">
+
+<section class="wrap narrow"><h1>Custom Request</h1>
+<p>Tell us about your project and we’ll reply with a quote. Payment is manual (Cash App, Venmo, etc.) after you approve the quote.</p>
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-netlify="true" name="custom-request" enctype="multipart/form-data">
+<input type="hidden" name="form-name" value="custom-request">
+<p class="hp" aria-hidden="true"><label>Leave empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+<label>Name <input name="name" required autocomplete="name"></label>
+<label>Email <input type="email" name="email" required autocomplete="email"></label>
+<label>Project description <textarea name="description" rows="6" required></textarea></label>
+<label>Upload file (STL, OBJ, 3MF, image) <input type="file" name="file" accept=".stl,.obj,.3mf,.step,.png,.jpg,.jpeg,.pdf"></label>
+<label>Material preference <select name="material"><option>No preference</option><option>PLA</option><option>PETG</option><option>ABS</option><option>TPU</option><option>Nylon</option><option>Resin</option></select></label>
+<label>Budget (USD) <input name="budget" inputmode="numeric" placeholder="e.g. 50"></label>
+<label>Timeline <select name="timeline"><option>Flexible</option><option>1–2 weeks</option><option>Within 1 week</option><option>Rush (ASAP)</option></select></label>
+<button class="btn" type="submit">Submit Request</button>
+</form>
+<p class="note">Setup: replace <code>YOUR_FORM_ID</code> with your Formspree ID (file uploads need a Formspree paid plan) or host on Netlify.</p>
+</section>
+</main>
+<footer class="site-footer camo">
+<div class="wrap foot">
+<div><strong>Matt’s 3D Customs Inc.</strong><p>Design Your Imagination. For the Future is Yours.</p></div>
+<div><strong>Pay manually</strong><p>Cash App · Venmo · Zelle · PayPal Friends &amp; Family. We send payment details after confirming your order.</p></div>
+<div><strong>Links</strong><p><a href="faq.html">FAQ</a> · <a href="contact.html">Contact</a> · <a href="custom.html">Custom Quote</a></p></div>
+</div>
+<p class="copy">© <span id="year">2026</span> Matt’s 3D Customs Inc. All rights reserved.</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
